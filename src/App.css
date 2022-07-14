@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap");
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 22px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  vertical-align: -6px;
+  cursor: pointer;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
+  padding: 7px;
+  border-radius: 5px;
+  color: rgb(165, 163, 163);
+}
+.material-icons:hover {
+  color: dodgerblue;
+  background: rgba(30, 143, 255, 0.13);
+  transition: 0.2s all;
+}
+.sidebar {
+  width: 60px;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0px;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background: white;
+}
+.content {
+  margin-left: 60px;
+}
+.content-wrap {
+  max-width: 95%;
+  margin: auto;
+}
+.settings {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 10px;
+}
+.navigate {
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.active {
+  color: dodgerblue;
+  background: rgba(30, 143, 255, 0.13);
+}
+.nav-wrap {
+  height: 10vh;
+}
+.navbar {
+  max-width: 95%;
+  margin: auto;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tabs span {
+  padding: 5px 25px;
+  font-weight: 400;
+  font-family: "Roboto", calibri;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.search-bar {
+  height: 9vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+::placeholder {
+  font-family: "Roboto", calibri;
+  font-size: 17px;
+}
+.input {
+  flex: 1;
+}
+.input input {
+  padding: 10px 25px;
+  width: 60%;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background: rgb(243, 243, 253);
+}
+.input input:focus {
+  transition: 0.001s all;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-color: dodgerblue;
+}
+.display {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+.display span {
+  font-size: 20px;
+}
