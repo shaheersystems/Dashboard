@@ -55,6 +55,7 @@
 .content-wrap {
   max-width: 95%;
   margin: auto;
+  padding: 20px 0px;
 }
 .settings {
   display: flex;
@@ -89,10 +90,9 @@
   font-weight: 400;
   font-family: "Roboto", calibri;
   cursor: pointer;
-  border-radius: 5px;
 }
 .search-bar {
-  height: 9vh;
+  height: 12vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -113,7 +113,6 @@
   background: rgb(243, 243, 253);
 }
 .input input:focus {
-  transition: 0.001s all;
   outline-style: solid;
   outline-width: 2px;
   outline-color: dodgerblue;
@@ -126,4 +125,85 @@
 }
 .display span {
   font-size: 20px;
+}
+
+.card-wrapper {
+  padding: 20px 0px;
+  min-height: 78vh;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.active-tab {
+  border-bottom: 2px solid black;
+  font-weight: bold;
+}
+.card {
+  padding: 25px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  min-height: 30vh;
+  width: 270px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.icon {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+}
+.progress {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.progress .days {
+  padding: 2px 15px;
+  background: rgb(228, 228, 228);
+  color: rgb(51, 51, 51);
+  display: inline-flex;
+  border-radius: 13px;
+}
+.progress-bar {
+  display: flex;
+  padding: 5px;
+  align-items: center;
+  gap: 10px;
+}
+.percentage {
+  flex: 0.9;
+  background: rgb(243, 243, 253);
+  border-radius: 13px;
+  height: 1vh;
+  width: 100%;
+}
+.fill {
+  height: 100%;
+  background: dodgerblue;
+  border-radius: 13px;
+}
+.num {
+  flex: 0.1;
+}
+svg {
+  padding: 5px;
+  border-radius: 5px;
+}
+.days-left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.days-left span {
+  font-size: 20px;
+  border-radius: 100%;
+  color: black;
 }

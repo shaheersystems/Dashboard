@@ -8,7 +8,7 @@ function Navbar() {
           <h2>Projects</h2>
         </div>
         <div className="tabs">
-          <span className="active">All</span>
+          <span className="active-tab">All</span>
           <span>Current</span>
           <span>Finished</span>
           <span>On Hold</span>
