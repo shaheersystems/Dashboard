@@ -29,12 +29,12 @@
   /* Support for IE. */
   font-feature-settings: "liga";
   padding: 7px;
-  border-radius: 5px;
+  border-radius: 100%;
   color: rgb(165, 163, 163);
 }
 .material-icons:hover {
-  color: dodgerblue;
-  background: rgba(30, 143, 255, 0.13);
+  color: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.13);
   transition: 0.2s all;
 }
 .sidebar {
@@ -46,7 +46,8 @@
   padding: 10px 0px;
   align-items: center;
   justify-content: space-between;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
   background: white;
 }
 .content {
@@ -70,11 +71,16 @@
   gap: 30px;
 }
 .active {
-  color: dodgerblue;
-  background: rgba(30, 143, 255, 0.13);
+  color: black;
+  background: rgba(0, 0, 0, 0.13);
 }
 .nav-wrap {
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
   height: 10vh;
+  position: sticky;
+  top: 0;
+  background: white;
 }
 .navbar {
   max-width: 95%;
@@ -110,12 +116,13 @@
   border: none;
   border-radius: 5px;
   outline: none;
-  background: rgb(243, 243, 253);
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  border: 1px solid transparent;
 }
 .input input:focus {
-  outline-style: solid;
-  outline-width: 2px;
-  outline-color: dodgerblue;
+  box-shadow: none;
+  border-color: black;
 }
 .display {
   flex: 1;
@@ -141,13 +148,14 @@
 }
 .card {
   padding: 25px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
   min-height: 30vh;
-  width: 270px;
+  width: 276px;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
 }
 .icon {
   display: flex;
@@ -166,8 +174,6 @@
   gap: 10px;
 }
 .progress .days {
-  padding: 2px 15px;
-  background: rgb(228, 228, 228);
   color: rgb(51, 51, 51);
   display: inline-flex;
   border-radius: 13px;
@@ -187,7 +193,7 @@
 }
 .fill {
   height: 100%;
-  background: dodgerblue;
+  background: rgb(0, 0, 0);
   border-radius: 13px;
 }
 .num {
@@ -203,7 +209,7 @@ svg {
   justify-content: space-between;
 }
 .days-left span {
-  font-size: 20px;
+  font-size: 16px;
   border-radius: 100%;
   color: black;
 }
