@@ -12,10 +12,10 @@ function Navbar() {
           <span>Current</span>
           <span>Finished</span>
           <span>On Hold</span>
-          <span>Archive</span>
+          <span>Archived</span>
         </div>
         <div className="title">
-          <h3>Timothy</h3>
+          <h3>Shaheer.</h3>
         </div>
       </div>
     </div>

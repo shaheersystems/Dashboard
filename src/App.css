@@ -96,23 +96,25 @@
   font-weight: 400;
   font-family: "Roboto", calibri;
   cursor: pointer;
+  border-radius: 5px;
 }
 .search-bar {
   height: 12vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 10px;
 }
 ::placeholder {
   font-family: "Roboto", calibri;
   font-size: 17px;
 }
 .input {
-  flex: 1;
+  flex: 3;
 }
 .input input {
   padding: 10px 25px;
-  width: 60%;
+  width: 100%;
   border: none;
   border-radius: 5px;
   outline: none;
@@ -124,15 +126,6 @@
   box-shadow: none;
   border-color: black;
 }
-.display {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
-  gap: 20px;
-}
-.display span {
-  font-size: 20px;
-}
 
 .card-wrapper {
   padding: 20px 0px;
@@ -143,20 +136,31 @@
   gap: 40px;
 }
 .active-tab {
-  border-bottom: 2px solid black;
-  font-weight: bold;
+  font-weight: 900;
+  background: #000;
+  color: white;
 }
 .card {
   padding: 25px;
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
     rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-  min-height: 30vh;
+  height: 35vh;
   width: 276px;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  cursor: pointer;
+  border: 1px solid transparent;
 }
+.card:hover {
+  box-shadow: none;
+  border: 1px solid black;
+  color: white;
+  background-color: black;
+  transition: 0.2s all;
+}
+
 .icon {
   display: flex;
   flex-direction: column;
@@ -190,6 +194,8 @@
   border-radius: 13px;
   height: 1vh;
   width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 .fill {
   height: 100%;
@@ -211,5 +217,55 @@ svg {
 .days-left span {
   font-size: 16px;
   border-radius: 100%;
+  color: black;
+}
+.new-window {
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  color: black;
+}
+.card:hover .days-left span {
+  color: white;
+  transition: 0.2s all;
+}
+.card:hover .fill {
+  background: white;
+  transition: 0.2s all;
+}
+.card:hover .percentage {
+  transition: 0.2s all;
+  background: #000;
+}
+.add {
+  flex: 0.6;
+  display: flex;
+  justify-content: flex-end;
+}
+.add span {
+  padding: 0px;
+  background: none;
+  color: white;
+}
+.add span:hover {
+  background: none;
+}
+.add button {
+  padding: 7px 25px;
+  cursor: pointer;
+  background: #000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  border: 1px solid black;
+  font-family: "Roboto", calibri;
+  font-style: 17px;
+}
+.add button:hover {
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  color: black;
+}
+.add button:hover span {
   color: black;
 }

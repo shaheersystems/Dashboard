@@ -22,3 +22,7 @@ p,
 span {
   font-family: "Roboto", calibri;
 }
+a {
+  text-decoration: none;
+  color: white;
+}

@@ -6,7 +6,12 @@ import CardWrapper from "./components/CardWrapper";
 import Card from "./components/Card";
 import { useState } from "react";
 function App() {
-  const [projects, setPrjects] = useState([
+  const [input, setInput] = useState("");
+  const searchHandler = (event) => {
+    var lowerCase = event.target.value.toLowerCase();
+    setInput(lowerCase);
+  };
+  const [projects, setProjects] = useState([
     {
       id: 1,
       title: "News App",
@@ -48,15 +53,23 @@ function App() {
       daysLeft: "60",
     },
   ]);
+  const filteredProjects = projects.filter((item) => {
+    if (input === "") {
+      return item;
+    } else {
+      return item.title.toLowerCase().includes(input);
+    }
+  });
   return (
     <div className="App">
       <Sidebar />
       <Content>
-        <SearchBar />
+        <SearchBar searchHandler={searchHandler} />
         <CardWrapper>
-          {projects.map((item) => {
+          {filteredProjects.map((item) => {
             return (
               <Card
+                key={item.id}
                 title={item.title}
                 description={item.description}
                 progress={item.progress}

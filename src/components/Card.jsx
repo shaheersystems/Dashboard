@@ -20,7 +20,7 @@ function Card(props) {
         </div>
         <div className="days-left">
           <span className="days">{props.daysLeft} Days Left</span>
-          <span className="material-icons">open_in_new</span>
+          <span className="material-icons new-window">open_in_new</span>
         </div>
       </div>
     </div>
