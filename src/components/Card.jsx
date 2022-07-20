@@ -20,7 +20,9 @@ function Card(props) {
         </div>
         <div className="days-left">
           <span className="days">{props.daysLeft} Days Left</span>
-          <span className="material-icons new-window">open_in_new</span>
+          <a href={props.link} target="_blank" rel="noreferrer">
+            <span className="material-icons new-window">open_in_new</span>
+          </a>
         </div>
       </div>
     </div>
